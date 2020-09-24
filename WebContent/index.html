@@ -18,30 +18,71 @@
 			}
 			
 			.header_left{
-				width: 15.30%; height: 80px;
-				background-color: olive;
+				width: 18.25%; height: 80px;
 				display: inline-block;
 				float: left;
 			}
 			
+			.header_left nav{
+				display: inline-block;
+				position: absolute;
+				margin: 32px 12px;
+			}
+			
+			.header_left nav a{
+				color:white;
+				font-size: 8px;
+				text-decoration: none;
+			}
+			
 			#header_logo{
 				display: inline-block;
-				height: 50px;
-				width: 75px;
-				margin: 15px 0px 15px 32px;
-				background: url('./IMAGES/fistsprite.png') 0 -2400px no-repeat;
-				transition: background-position 0.25s steps(15,end);
-				tranform: sacle(0.33);
+				width: 75px; height: 52.8px;
+				margin: 13.6px 0px 15px 32px;
+				position: relative;
 			}
 			
-			.bar_logo .bar_fist_logo{
+			#header_logo .bar_logo {
+				width: 52.8px; height: 52.8px;
+				float: right;
+			}
+			
+			#header_logo .bar_logo img{
+				width: 108%; height: 100%;
+				/*
+				원래 시도했던 것 : 긴 이미지 소스를 활용해 마우스 오버시스크롤 되어 로고가 움직이는 효과 
 				width: 160px; height: 160px;
-				
+				float: right;
+				display: inline-block;
+				position: relative;
+				right: 0px;
+				background: url('./IMAGES/fistsprite.png') 0 -2400px no-repeat;
+				border: 1px red solid;*/
 			}
 			
+			#second_logo{
+				width: 60px; height: 50px;
+				margin: 18px 20px;
+				position: relative;
+				display: inline-block;
+				float: right;
+			}
+			
+			#second_logo img{
+				width: 59px; height: 30px;
+				padding: 7.5px 0px;
+				box-sizing: content-box;
+			}
+	
+			.header_seperator{
+				display: inline-block; height: 30px;
+				margin: 25px 32px;
+				border-left: 2px #333333 solid;
+				position: absolute;
+			}
+	
 			.header_nav_bar{
 				height: 80px;
-				background-color: white;
 				float: left;
 			}
 			
@@ -49,7 +90,6 @@
 				height: 80px;
 				display: inline-block;
 				position: relative;
-				background-color: blue;
 				float: left;
 			}
 			
@@ -58,10 +98,9 @@
 				margin: 0px 7.0125px;
 				padding: 2px 35px;
 				font-weight: bold;
-				font-size: 12.5px;
+				font-size: 11px;
 				font-family: "나눔고딕";
 				text-decoration: none;
-				background-color: lime;
 				color: white;
 				box-sizing: border-box;
 				line-height: 80px;
@@ -90,9 +129,20 @@
 			<div class = "header_left">
 				
 				<div id = "header_logo">
-					<span class = "bar_logo">
-						<span class = "bar_fist_logo"></span>
-					</span>
+					<div class = "bar_logo">
+						<a href = "./TMP/tmp.html">
+							<img alt="" src="./IMAGES/logo_fxx.png">
+						</a>
+					</div>
+				</div>
+				
+				<nav>
+					<a href = "./TMP/tmp.html">▼</a>
+				</nav>
+				<div class = "header_seperator"></div>
+				
+				<div id =  "second_logo">
+					<img alt="" src="./IMAGES/riot_logo.png">
 				</div>
 				
 			</div>
