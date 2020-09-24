@@ -15,36 +15,63 @@
 			
 			.main_section2{
 				width: 100%; height: 47.67%;
-				background-color: yellow;
+				background-color: #e7e6e3;
 				max-width: 1440px;
-				/* #e7e6e3 */
 				position: relative;
 			}
 			
 			#section2_img_nav{
-				width: 92.0%; height: 106.56%;
+				width: 95.83%; height: 104.56%;
 				background-color: white;
 				padding: 10px 10px 0px;
 				box-sizing: border-box;
-				margin: -10px -10px 0px;
+				margin: -10px -1.95% 0px;
 				right: 4%;
 				bottom: 0px;
 				position: absolute;
+				text-align: center;
 			}
 			
-			#img_navs{
+			.rowleft{
+				margin-right: 10px;
+			}
+			
+			#fir_Img{
+				background-image: url("./IMAGES/NAV/league-newlogo-banner.jpg");
+			}
+			
+			#sec_Img{
+				background-image: url("./IMAGES/NAV/tft-riot-site-card.jpg");
+			}
+			
+			#thd_Img{
+				background-image: url("./IMAGES/NAV/wr-banner-ziggs-nov.jpg");
+			}
+			
+			#for_Img{
+				background-image: url("./IMAGES/NAV/lor-key-art.jpg");
+			}
+			
+			#fiv_Img{
+				background-image: url("./IMAGES/NAV/riot-games-valorant-asset.jpg");
+			}
+			
+			.img_navs{
 				position: relative;
-				width: 46.88%; height: 32.56%;
+				width: 667px; height: 380px;
+				/*width: 46.88%; height: 32.56%;*/
 				background-color: black;
 				display: inline-block;
-				float: left;
-				margin-right: 3px; 
+				box-sizing: border-box;
+				margin-top: 10px;
+
 			}
 		
 			footer{
 				width: 100%; height: 233px;
 				padding: 0px 20px 20px;
 				background-color: #252423;
+				box-sizing: border-box;
 			}
 		
 		</style>
@@ -119,8 +146,11 @@
 			<section class = "main_section2">
 				
 				<nav id = "section2_img_nav">
-					<div id = "img_navs"></div>
-					<div id = "img_navs"></div>
+					<div class = "img_navs rowleft" id = "fir_Img"></div>
+					<div class = "img_navs" 		id = "sec_Img"></div>
+					<div class = "img_navs rowleft" id = "thd_Img"></div>
+					<div class = "img_navs" 		id = "for_Img"></div>
+					<div class = "img_navs"			id = "fiv_Img"></div>
 				</nav>
 				
 			</section>
