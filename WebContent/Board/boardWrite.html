@@ -7,11 +7,14 @@
 		<meta charset="UTF-8">
 		<title>Board Write</title>
 		
-		<link href="./CSS/header.css" rel = "stylesheet">
+		
+		<link href="../CSS/COMMON/common.css" rel = "stylesheet">
+		<link href="../CSS/header.css" rel = "stylesheet">
+		
 		
 		<style type="text/css">
 			
-			.wrapper{ width: 1000px; height: 800px; {}
+			.wrapper{ width: 1000px; height: 650px; }
 			
 			.content{
 				width: 725px;
@@ -48,6 +51,22 @@
 				font-size: 13px;
 			}
 		
+			section{
+				min-width: 100%; min-height: 650px;
+				font-size: 13px;
+				font-family: "arial";
+				background-color: #F6F6F6;
+				top: 0px;
+				padding-bottom: 95px;
+			}
+			
+			footer{
+				width: 100%; height: 233px;
+				padding: 0px 20px 0px;
+				background-color: #252423;
+				box-sizing: border-box;
+			}
+		
 		</style>
 		
 	</head>
@@ -57,29 +76,80 @@
 		<!-- form 태그 사용 -->
 		<!-- 제목, 작성자, 내용, 글쓰기 버튼 -->
 		
-		<div class = "wrapper">
-		
-			<div class = "content">
-						
-				<b>제목</b> <input class = "blank text1" type="text">
-				<b>작성자</b> <input class = "blank text2" type="text">
-	
-				<b>내용</b>
-				<hr>
-				<textarea class= "blank" rows="40" cols="100" placeholder="내용 입력"></textarea>
-		
-			</div>
+		<header>
+			<div class = "header_left">
 				
-			<form action="./boardList.html">
-		
-				<div class = "button_div">
-					<button class = "blank button">write</button>	
+				<div id = "header_logo">
+					<div class = "bar_logo">
+						<a href = "../TMP/tmp.html" target="_blank">
+							<img alt="" src="../IMAGES/logo_fxx.png">
+						</a>
+					</div>
 				</div>
 				
-			</form>
+				<nav>
+					<a href = "../TMP/tmp.html" target="_blank">▼</a>
+				</nav>
+				
+				<div class = "header_seperator"></div>
+				
+				<div id =  "second_logo">
+					<a href = "../index.html"><img alt="" src="../IMAGES/riot_logo.png"></a>
+				</div>
+				
+			</div>
+			
+			<div class = "header_nav_bar">
+				
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "/MyWeb/index.html">BOARD</a>
+				</div>
+						
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">WORK WITH US</a>
+				</div>
+				
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">DIVERSITY & CULTURE</a>
+				</div>
+							
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">NEWS</a>
+				</div>
+				
+			</div>
+			
+		</header>
 		
-		</div>
-	
+		<section>
+		
+			<div class = "wrapper">
+			
+				<div class = "content">
+							
+					<b>제목</b> <input class = "blank text1" type="text">
+					<b>작성자</b> <input class = "blank text2" type="text">
+		
+					<b>내용</b>
+					<hr>
+					<textarea class= "blank" rows="40" cols="100" placeholder="내용 입력"></textarea>
+			
+				</div>
+					
+				<form action="./boardList.html">
+			
+					<div class = "button_div">
+						<button class = "blank button">write</button>	
+					</div>
+					
+				</form>
+			
+			</div>
+			
+		</section>
+		
+		<footer></footer>
+		
 	</body>
 
 </html>

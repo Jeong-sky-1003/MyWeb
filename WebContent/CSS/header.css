@@ -39,14 +39,14 @@ header{
 #header_logo .bar_logo img{
 	width: 108%; height: 100%;
 	/*
-원래 시도했던 것 : 긴 이미지 소스를 활용해 마우스 오버시스크롤 되어 로고가 움직이는 효과 
-width: 160px; height: 160px;
-float: right;
-display: inline-block;
-position: relative;
-right: 0px;
-background: url('./IMAGES/fistsprite.png') 0 -2400px no-repeat;
-border: 1px red solid;*/
+	원래 시도했던 것 : 긴 이미지 소스를 활용해 마우스 오버시스크롤 되어 로고가 움직이는 효과 
+	width: 160px; height: 160px;
+	float: right;
+	display: inline-block;
+	position: relative;
+	right: 0px;
+	background: url('./IMAGES/fistsprite.png') 0 -2400px no-repeat;
+	border: 1px red solid;*/
 }
 
 #second_logo{
