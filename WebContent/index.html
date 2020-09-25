@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		
+		<!-- 상단에 있는 메뉴 중 하나를 board와 연결할 것 -->
 		<meta charset="UTF-8">
 		<title>Home | Riot Games</title>
 		
@@ -13,53 +13,27 @@
 		<link href="./CSS/main_section_2.css" rel = "stylesheet">
 			
 		<style>
-		
-			.img_navs{
-				
-			}
-		
-			#img_adjust{
-				width: 100%; height: 100%;
-				position: absolute;
-				left: 0px;
-			}
-		
-			#btn_box{
-				width: 667px; height: 50px;
+		/*
+			.main_content3{
+				width: 100%; height: 23.77%;
+				background-color: yellow;
+				max-width: 1440px;
 				position: relative;
-				margin-top: 300px;
-			}
-			
-			#btn_box_make{
-				position: absolute;
-				left: 40px;
-			
-				/* btn */
-				position: absolute;
-				width: 181px; height: 46px;
-				background-color: rgba(255,255,255,0);
-				border-radius: 40px;
-				border: 1px white solid;
-			}
-			
-			#btn_box_make:hover{
-				color: #d1363a;
-				background-color: rgba(255,255,255,1);
-			}
-			
-			#fir_btn{
-				/* text */
 				text-align: center;
-				line-height: 46px;
-				font-size: 17px;
-				font-family: "나눔고딕";
-				word-spacing: 2px;
-				letter-spacing: 0.8px;
 			}
+			
+			#h2_text{
+				width: 95.83%; height: 58px;
+				background-color: white;
+				
+				margin: 0px auto;
+				position: absolute;
+			}*/
 			
 			a{
 				color: white;
 				text-decoration: none;
+				padding: 0px;
 			}
 			
 			footer{
@@ -143,7 +117,7 @@
 				<nav id = "section2_img_nav">
 					
 					<div class = "img_navs rowleft" id = "fir_Img">
-						
+					
 						<a href = "#">
 							<img id = "img_adjust" alt="" src="./IMAGES/NAV/league-newlogo-banner.jpg">
 						</a>
@@ -162,29 +136,54 @@
 							<img id = "img_adjust" alt="" src="./IMAGES/NAV/tft-riot-site-card.jpg">
 						</a>
 						
+						<div id = "btn_box">
+							<a href = "./TMP/tmp.html" id = "btn_box_make">
+								<span id = "fir_btn">/ Official Site</span>
+							</a>
+						</div>
+						
 					</div>
 					
 					<div class = "img_navs rowleft" id = "thd_Img">
 						<a href = "#">
 							<img id = "img_adjust" alt="" src="./IMAGES/NAV/wr-banner-ziggs-nov.jpg">
 						</a>
+						<div id = "btn_box">
+							<a href = "./TMP/tmp.html" id = "btn_box_make">
+								<span id = "fir_btn">/ Official Site</span>
+							</a>
+						</div>
 					</div>
 					
 					<div class = "img_navs" 		id = "for_Img">
 						<a href = "#">
 							<img id = "img_adjust" alt="" src="./IMAGES/NAV/lor-key-art.jpg">
 						</a>
+						<div id = "btn_box">
+							<a href = "./TMP/tmp.html" id = "btn_box_make">
+								<span id = "fir_btn">/ Official Site</span>
+							</a>
+						</div>
 					</div>
 					
 					<div class = "img_navs"			id = "fiv_Img">
 						<a href = "#">
 							<img id = "img_adjust" alt="" src="./IMAGES/NAV/riot-games-valorant-asset.jpg">
 						</a>
+						<div id = "btn_box">
+							<a href = "./TMP/tmp.html" id = "btn_box_make">
+								<span id = "fir_btn">/ Official Site</span>
+							</a>
+						</div>
 					</div>
 					
 				</nav>
 				
 			</section>
+							
+			<div class = "main_content3">
+				<div id = "h2_text"></div>
+			</div>
 			
 		</main>
 	

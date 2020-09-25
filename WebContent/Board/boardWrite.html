@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Board Write</title>
+		
+		<style type="text/css">
+			
+			.wrapper{ width: 1000px; height: 800px; {}
+			
+			.content{
+				width: 725px;
+				margin: 0px auto;
+			}
+		
+			.content b{
+				display: block;
+			}
+			
+			.blank{
+				margin-bottom: 16px;
+			}
+			
+			.content textarea{ display: block; margin}
+			.content button{ display: block; }
+		
+			.text1{
+				width: 720px;
+			}
+		
+			.text2{
+				width: 150px;
+			}
+			
+			.button_div{
+				width: 725px;
+				margin: 0px auto;
+				text-align: right;
+			}
+			
+			.button{
+				width: 100px; height: 30px;
+				font-size: 13px;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>
+	
+		<!-- form 태그 사용 -->
+		<!-- 제목, 작성자, 내용, 글쓰기 버튼 -->
+		
+		<div class = "wrapper">
+		
+			<div class = "content">
+						
+				<b>제목</b> <input class = "blank text1" type="text">
+				<b>작성자</b> <input class = "blank text2" type="text">
+	
+				<b>내용</b>
+				<hr>
+				<textarea class= "blank" rows="40" cols="100" placeholder="내용 입력"></textarea>
+		
+			</div>
+				
+			<form action="./boardList.html">
+		
+				<div class = "button_div">
+					<button class = "blank button">write</button>	
+				</div>
+				
+			</form>
+		
+		</div>
+	
+	</body>
+
+</html>

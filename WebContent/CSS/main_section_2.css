@@ -10,10 +10,10 @@
 	#section2_img_nav{
 		width: 95.83%; height: 104.56%;
 		background-color: #e7e6e3;
-		padding: 10px 10px 0px;
+		padding: 2px 2px 0px;
 		box-sizing: border-box;
 		margin: -10px -1.95% 0px;
-		right: 4%;
+		right: 3%;
 		bottom: 0px;
 		position: absolute;
 		text-align: center;
@@ -33,5 +33,56 @@
 		margin-top: 10px;
 	}
 	
+	#img_adjust{
+		width: 100%; height: 100%;
+		position: absolute;
+		left: 0px;
+	}
+
+	#btn_box{
+		width: 667px; height: 50px;
+		position: relative;
+		margin-top: 300px;
+	}
 	
+	#btn_box_make{
+		position: absolute;
+		left: 40px;
+	
+		/* btn */
+		position: absolute;
+		width: 181px; height: 46px;
+		background-color: rgba(255,255,255,0);
+		border-radius: 40px;
+		border: 1px white solid;
+		
+		visibility: hidden;
+	}
+	
+	#img_adjust:hover{
+		filter: brightness(180%);
+		filter: contrast(90%);
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+		/* 이미지 투명도 조절 */
+	}
+	
+	.img_navs:hover #btn_box_make{
+		visibility: visible;
+	}
+	
+	#btn_box_make:hover{
+		color: #d1363a;
+		background-color: rgba(255,255,255,1);
+	}
+	
+	#fir_btn{
+		/* text */
+		text-align: center;
+		line-height: 46px;
+		font-size: 17px;
+		font-family: "나눔고딕";
+		word-spacing: 2px;
+		letter-spacing: 0.8px;
+	}
 	
