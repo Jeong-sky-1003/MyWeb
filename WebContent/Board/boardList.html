@@ -6,11 +6,14 @@
 		<meta charset="UTF-8">
 		<title>Board list page</title>
 		
+		<link href="../CSS/COMMON/common.css" rel = "stylesheet">
+		<link href="../CSS/header.css" rel = "stylesheet">
+		
 		<style>
 			
 			a { text-decoration:none ; color:#000000 }
 			
-			body{ font-size: 13px; }
+			section{ font-size: 13px; }
 			
 			.notice h2{
 				font-size: 25px;
@@ -63,127 +66,177 @@
 		<!-- 10개의 게시판 리스트 -->
 		<!-- 제목 선택시 board select 로 이동 -->
 		<!-- 글쓰기 선택시 board write 로 이동 -->
-		<div class = "notice">
-			<h2>NOTICE</h2>
-		</div>
 		
-		<div>
+		<!-- header -->
+		<header>
+			
+			<div class = "header_left">
+				
+				<div id = "header_logo">
+					<div class = "bar_logo">
+						<a href = "../TMP/tmp.html" target="_blank">
+							<img alt="" src="../IMAGES/logo_fxx.png">
+						</a>
+					</div>
+				</div>
+				
+				<nav>
+					<a href = "../TMP/tmp.html" target="_blank">▼</a>
+				</nav>
+				
+				<div class = "header_seperator"></div>
+				
+				<div id =  "second_logo">
+					<img alt="" src="../IMAGES/riot_logo.png">
+				</div>
+				
+			</div>
+			
+			<div class = "header_nav_bar">
+				
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">BOARD</a>
+				</div>
+						
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">WORK WITH US</a>
+				</div>
+				
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">DIVERSITY & CULTURE</a>
+				</div>
+							
+				<div class = "header_nav_container" id = "header_nav_link">
+					<a href = "#">NEWS</a>
+				</div>
+				
+			</div>
+			
+		</header>
 		
-			<table class = "tbl">
+		<section>		
+			<div class = "notice">
+				<h2>NOTICE</h2>
+			</div>
+			
+			<div>
+			
+				<table class = "tbl">
+					
+					<thead>
+						<tr>
+							<th id = "table_margin">NO</th>
+							<th>SUBJECT</th>
+							<th>NAME</th>
+							<th>DATE</th>
+							<th>HIT</th>
+						</tr>
+					</thead>
 				
-				<thead>
-					<tr>
-						<th id = "table_margin">NO</th>
-						<th>SUBJECT</th>
-						<th>NAME</th>
-						<th>DATE</th>
-						<th>HIT</th>
-					</tr>
-				</thead>
-			
-				<tbody>
-	
-					<tr>
-						<td>1</td>
-						<td id = "left"><a href = "./boardSelect.html" >왁굳형 나중에 꼭 뭐 만들어줄게</a></td>
-						<td>훈수충김선비</td>
-						<td>2020.09.18</td>
-						<td>1</td>
-					</tr>
+					<tbody>
+		
+						<tr>
+							<td>1</td>
+							<td id = "left"><a href = "./boardSelect.html" >흐에</a></td>
+							<td>후아</td>
+							<td>2020.09.18</td>
+							<td>1</td>
+						</tr>
+						
+						<tr>
+							<td>2</td>
+							<td id = "left"><a href = "./boardSelect.html">마지막 시간이다 룰룽</a></td>
+							<td>꾸로꾸꾸</td>
+							<td>2020.09.14</td>
+							<td>0</td>
+						</tr>
+						
+						<tr>
+							<td>3</td>
+							<td id = "left"><a href = "./boardSelect.html">데이터가 없으니 게시물 하나만 보여주는 건가</a></td>
+							<td>후잉엥웅</td>
+							<td>2020.09.11</td>
+							<td>0</td>
+						</tr>
+						
+						<tr>
+							<td>4</td>
+							<td id = "left"><a href = "./boardSelect.html">룰룰루루ㅜ</a></td>
+							<td>멍</td>
+							<td>2020.09.09</td>
+							<td>100</td>
+						</tr>
+						
+						<tr>
+							<td>5</td>
+							<td id = "left"><a href = "./boardSelect.html">흐어어</a></td>
+							<td>훈후</td>
+							<td>2020.09.03</td>
+							<td>1</td>
+						</tr>
+						
+						<tr>
+							<td>6</td>
+							<td id = "left"><a href = "./boardSelect.html">띠리리리ㅣ릴 띠</a></td>
+							<td>충</td>
+							<td>2020.08.29</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>7</td>
+							<td id = "left"><a href = "./boardSelect.html">흐아아아 제바 ㄹ밖에 소리 지르지마</a></td>
+							<td>맥북프로최고</td>
+							<td>2020.08.28</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>8</td>
+							<td id = "left"><a href = "./boardSelect.html">의식 흐름대로 쓰지융</a></td>
+							<td>띵지머</td>
+							<td>2020.08.21</td>
+							<td>5</td>
+						</tr>
+						
+						<tr>
+							<td>9</td>
+							<td id = "left"><a href = "./boardSelect.html">10개 쓰는 것도 고역이다</a></td>
+							<td>훈루수</td>
+							<td>2020.08.13</td>
+							<td>10</td>
+						</tr>
+						
+						<tr>
+							<td>10</td>
+							<td id = "left"><a href = "./boardSelect.html">이거 어쩌냐 언제 다 따라가지</a></td>
+							<td>흐아아</td>
+							<td>2020.08.01</td>
+							<td>5</td>
+						</tr>
+						
+						<tr class = "button">
+							<td colspan="2" style = "text-align: left;">
+								<form>
+									<input type = "text" placeholder = "Search" class = "text_box">
+								</form>
+							</td>
+							<td></td>
+							<td></td>
+							<td>
+								<form action="./boardWrite.html">
+									<button>글쓰기</button>
+								</form>
+							</td>
+						</tr>
 					
-					<tr>
-						<td>2</td>
-						<td id = "left"><a href = "./boardSelect.html">마지막 시간이다 룰룽</a></td>
-						<td>꾸로꾸꾸</td>
-						<td>2020.09.14</td>
-						<td>0</td>
-					</tr>
-					
-					<tr>
-						<td>3</td>
-						<td id = "left"><a href = "./boardSelect.html">데이터가 없으니 게시물 하나만 보여주는 건가</a></td>
-						<td>후잉엥웅</td>
-						<td>2020.09.11</td>
-						<td>0</td>
-					</tr>
-					
-					<tr>
-						<td>4</td>
-						<td id = "left"><a href = "./boardSelect.html">html 개노잼</a></td>
-						<td>개소리</td>
-						<td>2020.09.09</td>
-						<td>100</td>
-					</tr>
-					
-					<tr>
-						<td>5</td>
-						<td id = "left"><a href = "./boardSelect.html">흐어어</a></td>
-						<td>훈수충김선비</td>
-						<td>2020.09.03</td>
-						<td>1</td>
-					</tr>
-					
-					<tr>
-						<td>6</td>
-						<td id = "left"><a href = "./boardSelect.html">닭둘기 개꿀띠</a></td>
-						<td>훈수충</td>
-						<td>2020.08.29</td>
-						<td>5</td>
-					</tr>
-					
-					<tr>
-						<td>7</td>
-						<td id = "left"><a href = "./boardSelect.html">흐아아아 제바 ㄹ밖에 소리 지르지마</a></td>
-						<td>맥북프로최고</td>
-						<td>2020.08.28</td>
-						<td>5</td>
-					</tr>
-					
-					<tr>
-						<td>8</td>
-						<td id = "left"><a href = "./boardSelect.html">오늘 저녁은 베가보쌈</a></td>
-						<td>띵지머</td>
-						<td>2020.08.21</td>
-						<td>5</td>
-					</tr>
-					
-					<tr>
-						<td>9</td>
-						<td id = "left"><a href = "./boardSelect.html">10개 쓰는 것도 고역이다</a></td>
-						<td>훈수</td>
-						<td>2020.08.13</td>
-						<td>10</td>
-					</tr>
-					
-					<tr>
-						<td>10</td>
-						<td id = "left"><a href = "./boardSelect.html">제발 니들 인생에 훈수하세요</a></td>
-						<td>제니훈</td>
-						<td>2020.08.01</td>
-						<td>5</td>
-					</tr>
-					
-					<tr class = "button">
-						<td colspan="2" style = "text-align: left;">
-							<form>
-								<input type = "text" placeholder = "Search" class = "text_box">
-							</form>
-						</td>
-						<td></td>
-						<td></td>
-						<td>
-							<form action="./boardWrite.html">
-								<button>글쓰기</button>
-							</form>
-						</td>
-					</tr>
+					</tbody>
 				
-				</tbody>
+				</table>
+				
+			</div>
 			
-			</table>
-			
-		</div>
-
+		</section>
 		
 	</body>
 	

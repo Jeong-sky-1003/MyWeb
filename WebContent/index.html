@@ -13,22 +13,133 @@
 		<link href="./CSS/main_section_2.css" rel = "stylesheet">
 			
 		<style>
-		/*
+		
+			main{
+				width: 100%; height: 2800px;
+				background-color: #e7e6e3;
+				/**/
+			}
+			
+			.main_section2{
+				width: 100%; height: 47.67%;
+				background-color: #e7e6e3;
+				max-width: 1440px;
+				position: relative;
+			}
+			
+			#section2_img_nav{
+				width: 95.83%; height: 104.56%;
+				background-color: #e7e6e3;
+				padding: 2px 2px 0px;
+				box-sizing: border-box;
+				margin: -10px -1.1% 0px;
+				/*margin: 0px auto; */
+				right: 3%;
+				bottom: 0px;
+				position: absolute;
+				text-align: center;
+			}
+			
+			.rowleft{
+				margin-right: 10px;
+			}
+			
+			.img_navs{
+				position: relative;
+				width: 667px; height: 380px;
+				/*width: 46.88%; height: 32.56%;*/
+				background-color: black;
+				display: inline-block;
+				box-sizing: border-box;
+				margin-top: 10px;
+			}
+			
+			#img_adjust{
+				width: 100%; height: 100%;
+				position: absolute;
+				left: 0px;
+			}
+		
+			#btn_box{
+				width: 667px; height: 50px;
+				position: relative;
+				margin-top: 300px;
+			}
+			
+			#btn_box_make{
+				position: absolute;
+				left: 40px;
+			
+				/* btn */
+				position: absolute;
+				width: 181px; height: 46px;
+				background-color: rgba(255,255,255,0);
+				border-radius: 40px;
+				border: 1px white solid;
+				
+				visibility: hidden;
+			}
+			
+			#img_adjust:hover{
+				filter: brightness(180%);
+				filter: contrast(90%);
+				opacity: 0.9;
+				filter: alpha(opacity=90);
+				/* 이미지 투명도 조절 */
+			}
+			
+			.img_navs:hover #btn_box_make{
+				visibility: visible;
+			}
+			
+			#btn_box_make:hover{
+				color: #d1363a;
+				background-color: rgba(255,255,255,1);
+				
+			}
+			
+			#fir_btn{
+				/* text */
+				text-align: center;
+				line-height: 46px;
+				font-size: 17px;
+				font-family: "나눔고딕";
+				word-spacing: 2px;
+				letter-spacing: 0.8px;
+			}
+			
 			.main_content3{
-				width: 100%; height: 23.77%;
-				background-color: yellow;
+				width: 100%;
+				/*background-color: yellow;*/
 				max-width: 1440px;
 				position: relative;
 				text-align: center;
+				top: 0px;
+				box-sizing: border-box;
+				display: inline-block;
 			}
 			
 			#h2_text{
 				width: 95.83%; height: 58px;
-				background-color: white;
-				
 				margin: 0px auto;
-				position: absolute;
-			}*/
+			}
+			
+			#h2_text h2{
+				font-size: 3.125em;
+				font-weight: bold;
+				font-family: "Arial";
+				color: #2b2a29;
+			}
+			
+			.img_size{
+				width: 95.83%; height: 625px;
+				background-color: silver;
+				margin: 20px auto 0px;
+			}
+			
+			#force_img_adjust{
+				width: 100%; height: 100%;
+			}
 			
 			a{
 				color: white;
@@ -76,7 +187,7 @@
 			<div class = "header_nav_bar">
 				
 				<div class = "header_nav_container" id = "header_nav_link">
-					<a href = "#">WHO WE ARE</a>
+					<a href = "./Board/boardList.html">BOARD</a>
 				</div>
 						
 				<div class = "header_nav_container" id = "header_nav_link">
@@ -181,9 +292,16 @@
 				
 			</section>
 							
-			<div class = "main_content3">
-				<div id = "h2_text"></div>
-			</div>
+			<section class = "main_content3">
+				<div id = "h2_text">
+					<h2>RIOT FORCE</h2>
+				</div>
+				<div class = "img_size">
+					<a>
+						<img id = "force_img_adjust" alt="" src="./IMAGES/NAV/riotgamescom-forge.jpg">
+					</a>
+				</div>
+			</section>
 			
 		</main>
 	
