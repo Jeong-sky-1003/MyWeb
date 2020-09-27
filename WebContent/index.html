@@ -11,7 +11,99 @@
 		<link href="./CSS/COMMON/header.css" rel = "stylesheet">
 		<link href="./CSS/COMMON/footer.css" rel = "stylesheet">
 		<link href="./CSS/index.css" rel = "stylesheet">
-		
+
+		<style type="text/css">
+			#msg_r_u_game_d{
+				position: absolute;
+			}
+
+			.img_blur{
+				width: 95.83%; height: 625px;
+				background-color: yellow;
+				margin: 0px auto;
+				position: absolute;
+			}
+			
+			#img_box{
+				width: 95.83%; height: 625px;
+				background-color: white;
+				position: absolute;
+				visibility: hidden;
+				filter: brightness(180%);
+				filter: contrast(80%);
+				opacity: 0.5;
+				position: absolute;
+			}
+			
+			.img-card{
+				width: 93.03%; height: 25%;
+				position: absolute;
+				bottom:0px;
+				padding-left: 40px;
+			}
+			
+			.img_size:hover #img_box{
+				visibility: visible;
+			}
+			
+			.img_size:hover #under-line{
+				visibility: visible;
+			}
+			
+			#img_size_h2{
+				width: 95.83%; height: 14.3%;
+			}
+			
+			#img_size_h2 h2{
+				width: 17%;
+				background-color: #d1363a;
+				margin: 0px auto;
+				position: absolute;
+				padding: 6px 0px;
+				text-align: center;
+				color: white;
+				font-family: arial;
+				font-size: 0.6em;
+				letter-spacing: 0.22em;
+			}
+			
+			#img_size_h3{				
+				width: 95.83%; height: 30%;
+				margin-top: 20px;
+			}
+			
+			#img_size_h3 h3{
+				float: left;
+				color: white;
+				font-family: arial;
+				font-size: 2.3em;
+				text-decoration: none;
+			}
+			
+			#line-div{
+				width: 95.83%; height: 20px;
+				position: relative;
+			}
+			
+			#under-line{
+				top: 0px;
+				position: absolute;
+				visibility: hidden;
+				left: 0px;
+				clip: rect(0px, 185px, 20px, 0);
+				width: 50%;
+			}
+			
+			#img_description{
+				margin-top: -2px;
+				color: white;
+				float: left;
+				font-family: arial;
+				font-size: 1em;
+			}
+			
+		</style>
+
 	</head>
 	
 	<body>
@@ -153,13 +245,27 @@
 							
 			<section class = "main_content3">
 				<div id = "h2_text">
-					<h2>RIOT FORCE</h2>
+					<h2>RIOT FORGE</h2>
 				</div>
+				
 				<div class = "img_size">
-					<a>
+					<div id = "img_box"></div>	
+					<div class = "img-card">
+						<div id = "img_size_h2"><h2>ARE YOU A GAME DEVELOPER?</h2></div>
+						<div id = "img_size_h3"><h3>Riot Forge</h3></div>
+						<div id = "line-div">
+							<img id = "under-line" alt="" src="/MyWeb/IMAGES/distressed-underline--light.svg">
+						</div>
+						<div id = "img_description">
+						We're a publisher working with talented and experienced third party developers to bring awesome new League of Legends games to player of all types.
+						</div>
+					</div>
+					<a id = "force_img_background">
 						<img id = "force_img_adjust" alt="" src="/MyWeb/IMAGES/NAV/riotgamescom-forge.jpg">
 					</a>
+					
 				</div>
+				
 			</section>
 			
 		</main>

@@ -56,14 +56,17 @@
 			
 		}
 		
-		#main_lear_more_btn:hover{
+		#main_learn_more_btn:hover{
 			background-color: white;
+		}
+		
+		#main_learn_more_btn:hover #learn_more_btn{
 			color: #d1363a;
 		}
 		
 		@charset "UTF-8";
 
-	main{
+		main{
 			width: 100%; height: 2800px;
 			background-color: #e7e6e3;
 			/**/
@@ -81,7 +84,7 @@
 			background-color: #e7e6e3;
 			padding: 2px 2px 0px;
 			box-sizing: border-box;
-			margin: -10px -1.1% 0px;
+			margin: -70px -1.1% 0px;
 			/*margin: 0px auto; */
 			right: 3%;
 			bottom: 0px;
@@ -144,7 +147,6 @@
 		#btn_box_make:hover{
 			color: #d1363a;
 			background-color: rgba(255,255,255,1);
-			
 		}
 		
 		#fir_btn{
