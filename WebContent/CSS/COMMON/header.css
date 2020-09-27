@@ -6,8 +6,6 @@
 			border-bottom: 2px #333333 solid;
 		}
 		
-		
-		
 		.header_left{
 			width: 18.25%; height: 80px;
 			display: inline-block;
@@ -82,18 +80,24 @@
 			display: inline-block;
 			position: relative;
 			float: left;
+			text-decoration: none;
 		}
 		
-		#header_nav_link a{
+		.header_nav_container:hover{
+			border-bottom: 1px solid red;
+			text-decoration: none;
+		}
+
+		#header_nav_link{
+			text-decoration: none;
 			width: 0.8em; height: 80px;
 			margin: 0px 7.0125px;
 			padding: 2px 35px;
 			font-weight: bold;
 			font-size: 11px;
 			font-family: "나눔고딕";
-			text-decoration: none;
-			color: white;
 			box-sizing: border-box;
 			line-height: 80px;
+			color: white;
 		}
 		
