@@ -276,7 +276,7 @@
 			position: absolute;
 			visibility: hidden;
 			left: 0px;
-			clip: rect(0px, 185px, 20px, 0);
+			clip: rect(0px, 185px, 20px, 0px);
 			width: 50%;
 		}
 		
